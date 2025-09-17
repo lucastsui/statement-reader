@@ -1,0 +1,586 @@
+
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]
+Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 27235.74it/s]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+
+Epoch 1/12:   0%|          | 0/51 [00:00<?, ?it/s]`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+
+Epoch 1/12:   0%|          | 0/51 [00:12<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/scripts/train_donut.py", line 144, in <module>
+    main()
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/scripts/train_donut.py", line 108, in main
+    outputs = model(pixel_values=pixel_values, decoder_input_ids=decoder_input_ids, labels=labels)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/models/vision_encoder_decoder/modeling_vision_encoder_decoder.py", line 572, in forward
+    loss = self.loss_function(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/loss/loss_utils.py", line 67, in ForCausalLMLoss
+    loss = fixed_cross_entropy(logits, shift_labels, num_items_in_batch, ignore_index, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/loss/loss_utils.py", line 36, in fixed_cross_entropy
+    loss = nn.functional.cross_entropy(source, target, ignore_index=ignore_index, reduction=reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/functional.py", line 3462, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Expected input batch_size (18) to match target batch_size (164).
+
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]
+Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 27962.03it/s]
+
+Epoch 1/12:   0%|          | 0/51 [00:00<?, ?it/s]`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+
+Epoch 1/12:   0%|          | 0/51 [00:10<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/scripts/train_donut.py", line 151, in <module>
+    main()
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/scripts/train_donut.py", line 115, in main
+    outputs = model(pixel_values=pixel_values, decoder_input_ids=decoder_input_ids, labels=labels)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/models/vision_encoder_decoder/modeling_vision_encoder_decoder.py", line 572, in forward
+    loss = self.loss_function(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/loss/loss_utils.py", line 67, in ForCausalLMLoss
+    loss = fixed_cross_entropy(logits, shift_labels, num_items_in_batch, ignore_index, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/loss/loss_utils.py", line 36, in fixed_cross_entropy
+    loss = nn.functional.cross_entropy(source, target, ignore_index=ignore_index, reduction=reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/functional.py", line 3462, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Expected input batch_size (18) to match target batch_size (168).
+
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]
+Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 27594.11it/s]
+
+Epoch 1/12:   0%|          | 0/51 [00:00<?, ?it/s]`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+
+Epoch 1/12:   0%|          | 0/51 [00:10<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/scripts/train_donut.py", line 151, in <module>
+    main()
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/scripts/train_donut.py", line 115, in main
+    outputs = model(pixel_values=pixel_values, decoder_input_ids=decoder_input_ids, labels=labels)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/models/vision_encoder_decoder/modeling_vision_encoder_decoder.py", line 572, in forward
+    loss = self.loss_function(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/loss/loss_utils.py", line 67, in ForCausalLMLoss
+    loss = fixed_cross_entropy(logits, shift_labels, num_items_in_batch, ignore_index, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/loss/loss_utils.py", line 36, in fixed_cross_entropy
+    loss = nn.functional.cross_entropy(source, target, ignore_index=ignore_index, reduction=reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/functional.py", line 3462, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Expected input batch_size (18) to match target batch_size (164).
+
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]
+Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 28532.68it/s]
+
+Epoch 1/12:   0%|          | 0/51 [00:00<?, ?it/s]`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+
+Epoch 1/12:   0%|          | 0/51 [00:08<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/scripts/train_donut.py", line 153, in <module>
+    main()
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/scripts/train_donut.py", line 117, in main
+    outputs = model(pixel_values=pixel_values, decoder_input_ids=decoder_input_ids, labels=labels)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/models/vision_encoder_decoder/modeling_vision_encoder_decoder.py", line 572, in forward
+    loss = self.loss_function(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/loss/loss_utils.py", line 67, in ForCausalLMLoss
+    loss = fixed_cross_entropy(logits, shift_labels, num_items_in_batch, ignore_index, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/loss/loss_utils.py", line 36, in fixed_cross_entropy
+    loss = nn.functional.cross_entropy(source, target, ignore_index=ignore_index, reduction=reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/functional.py", line 3462, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Expected input batch_size (18) to match target batch_size (164).
+
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]
+Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 31300.78it/s]
+
+Epoch 1/12:   0%|          | 0/51 [00:00<?, ?it/s]`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+
+Epoch 1/12:   0%|          | 0/51 [00:07<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/scripts/train_donut.py", line 153, in <module>
+    main()
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/scripts/train_donut.py", line 117, in main
+    outputs = model(pixel_values=pixel_values, decoder_input_ids=decoder_input_ids, labels=labels)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/models/vision_encoder_decoder/modeling_vision_encoder_decoder.py", line 572, in forward
+    loss = self.loss_function(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/loss/loss_utils.py", line 67, in ForCausalLMLoss
+    loss = fixed_cross_entropy(logits, shift_labels, num_items_in_batch, ignore_index, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/loss/loss_utils.py", line 36, in fixed_cross_entropy
+    loss = nn.functional.cross_entropy(source, target, ignore_index=ignore_index, reduction=reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/functional.py", line 3462, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Expected input batch_size (18) to match target batch_size (168).
+
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]
+Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 34100.03it/s]
+
+Epoch 1/12:   0%|          | 0/51 [00:00<?, ?it/s]`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+
+Epoch 1/12:   0%|          | 0/51 [00:10<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/scripts/train_donut.py", line 153, in <module>
+    main()
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/scripts/train_donut.py", line 117, in main
+    outputs = model(pixel_values=pixel_values, decoder_input_ids=decoder_input_ids, labels=labels)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/models/vision_encoder_decoder/modeling_vision_encoder_decoder.py", line 572, in forward
+    loss = self.loss_function(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/loss/loss_utils.py", line 67, in ForCausalLMLoss
+    loss = fixed_cross_entropy(logits, shift_labels, num_items_in_batch, ignore_index, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/transformers/loss/loss_utils.py", line 36, in fixed_cross_entropy
+    loss = nn.functional.cross_entropy(source, target, ignore_index=ignore_index, reduction=reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tsuimingleong/Documents/GitHub/statement-reader/.venv/lib/python3.12/site-packages/torch/nn/functional.py", line 3462, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Expected input batch_size (18) to match target batch_size (178).
+
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]
+Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 28532.68it/s]
+
+Epoch 1/12:   0%|          | 0/51 [00:00<?, ?it/s]`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+
+Epoch 1/12:   2%|▏         | 1/51 [00:44<37:20, 44.81s/it]
+Epoch 1/12:   4%|▍         | 2/51 [02:42<1:11:28, 87.53s/it]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]
+Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 26886.56it/s]
+
+Epoch 1/12:   0%|          | 0/51 [00:00<?, ?it/s]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]
+Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 18893.26it/s]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+
+Epoch 1/12:   0%|          | 0/51 [00:00<?, ?it/s]`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+
+Epoch 1/12:   2%|▏         | 1/51 [00:13<11:06, 13.33s/it]
+Epoch 1/12:   4%|▍         | 2/51 [00:22<08:48, 10.79s/it]
+Epoch 1/12:   6%|▌         | 3/51 [00:27<06:27,  8.08s/it]
+Epoch 1/12:   8%|▊         | 4/51 [00:30<04:53,  6.25s/it]
+Epoch 1/12:  10%|▉         | 5/51 [00:33<03:51,  5.04s/it]
+Epoch 1/12:  12%|█▏        | 6/51 [00:36<03:14,  4.32s/it]
+Epoch 1/12:  14%|█▎        | 7/51 [00:40<03:01,  4.11s/it]
+Epoch 1/12:  16%|█▌        | 8/51 [00:44<02:58,  4.15s/it]
+Epoch 1/12:  18%|█▊        | 9/51 [00:48<02:52,  4.11s/it]
+Epoch 1/12:  20%|█▉        | 10/51 [00:58<04:04,  5.96s/it]
+Epoch 1/12:  22%|██▏       | 11/51 [01:04<04:04,  6.10s/it]
+Epoch 1/12:  24%|██▎       | 12/51 [01:09<03:36,  5.55s/it]
+Epoch 1/12:  25%|██▌       | 13/51 [01:12<03:06,  4.90s/it]
+Epoch 1/12:  27%|██▋       | 14/51 [01:16<02:45,  4.48s/it]
+Epoch 1/12:  29%|██▉       | 15/51 [01:21<02:50,  4.74s/it]
+Epoch 1/12:  31%|███▏      | 16/51 [01:30<03:26,  5.89s/it]
+Epoch 1/12:  33%|███▎      | 17/51 [01:35<03:17,  5.82s/it]
+Epoch 1/12:  35%|███▌      | 18/51 [01:47<04:07,  7.51s/it]
+Epoch 1/12:  37%|███▋      | 19/51 [02:08<06:09, 11.55s/it]
+Epoch 1/12:  39%|███▉      | 20/51 [02:37<08:41, 16.82s/it]
+Epoch 1/12:  41%|████      | 21/51 [02:50<07:51, 15.70s/it]
+Epoch 1/12:  43%|████▎     | 22/51 [03:02<07:05, 14.67s/it]
+Epoch 1/12:  45%|████▌     | 23/51 [03:17<06:52, 14.72s/it]
+Epoch 1/12:  47%|████▋     | 24/51 [03:33<06:48, 15.14s/it]
+Epoch 1/12:  49%|████▉     | 25/51 [03:42<05:44, 13.26s/it]
+Epoch 1/12:  51%|█████     | 26/51 [04:07<07:00, 16.81s/it]
+Epoch 1/12:  53%|█████▎    | 27/51 [04:32<07:39, 19.16s/it]
+Epoch 1/12:  55%|█████▍    | 28/51 [04:50<07:15, 18.92s/it]
+Epoch 1/12:  57%|█████▋    | 29/51 [05:04<06:21, 17.34s/it]
+Epoch 1/12:  59%|█████▉    | 30/51 [05:17<05:39, 16.19s/it]
+Epoch 1/12:  61%|██████    | 31/51 [05:25<04:33, 13.67s/it]
+Epoch 1/12:  63%|██████▎   | 32/51 [05:40<04:24, 13.95s/it]
+Epoch 1/12:  65%|██████▍   | 33/51 [05:50<03:52, 12.89s/it]
+Epoch 1/12:  67%|██████▋   | 34/51 [06:00<03:22, 11.93s/it]
+Epoch 1/12:  69%|██████▊   | 35/51 [06:10<03:02, 11.43s/it]
+Epoch 1/12:  71%|███████   | 36/51 [06:20<02:45, 11.04s/it]
+Epoch 1/12:  73%|███████▎  | 37/51 [06:27<02:19,  9.95s/it]
+Epoch 1/12:  75%|███████▍  | 38/51 [06:39<02:17, 10.56s/it]
+Epoch 1/12:  76%|███████▋  | 39/51 [06:55<02:25, 12.14s/it]
+Epoch 1/12:  78%|███████▊  | 40/51 [07:04<02:01, 11.01s/it]
+Epoch 1/12:  80%|████████  | 41/51 [07:10<01:35,  9.54s/it]
+Epoch 1/12:  82%|████████▏ | 42/51 [07:16<01:17,  8.59s/it]
+Epoch 1/12:  84%|████████▍ | 43/51 [07:27<01:15,  9.41s/it]
+Epoch 1/12:  86%|████████▋ | 44/51 [07:39<01:10, 10.07s/it]
+Epoch 1/12:  88%|████████▊ | 45/51 [07:50<01:02, 10.36s/it]
+Epoch 1/12:  90%|█████████ | 46/51 [08:01<00:52, 10.49s/it]
+Epoch 1/12:  92%|█████████▏| 47/51 [08:13<00:43, 10.93s/it]
+Epoch 1/12:  94%|█████████▍| 48/51 [08:26<00:34, 11.56s/it]
+Epoch 1/12:  96%|█████████▌| 49/51 [08:33<00:20, 10.33s/it]
+Epoch 1/12:  98%|█████████▊| 50/51 [08:45<00:10, 10.86s/it]
+Epoch 1/12: 100%|██████████| 51/51 [08:52<00:00,  9.61s/it]
+Epoch 1/12: 100%|██████████| 51/51 [08:52<00:00, 10.44s/it]
+Epoch 1: val_loss=7.7012
+
+Epoch 2/12:   0%|          | 0/51 [00:00<?, ?it/s]
+Epoch 2/12:   2%|▏         | 1/51 [00:59<49:31, 59.44s/it]
+Epoch 2/12:   4%|▍         | 2/51 [01:32<35:57, 44.03s/it]
+Epoch 2/12:   6%|▌         | 3/51 [02:11<33:21, 41.69s/it]
+Epoch 2/12:   8%|▊         | 4/51 [02:55<33:22, 42.60s/it]
+Epoch 2/12:  10%|▉         | 5/51 [03:41<33:37, 43.87s/it]
+Epoch 2/12:  12%|█▏        | 6/51 [04:21<31:49, 42.43s/it]
+Epoch 2/12:  14%|█▎        | 7/51 [04:45<26:40, 36.39s/it]
+Epoch 2/12:  16%|█▌        | 8/51 [05:09<23:17, 32.51s/it]
+Epoch 2/12:  18%|█▊        | 9/51 [05:51<24:54, 35.59s/it]
+Epoch 2/12:  20%|█▉        | 10/51 [06:22<23:21, 34.18s/it]
+Epoch 2/12:  22%|██▏       | 11/51 [06:58<23:02, 34.57s/it]
+Epoch 2/12:  24%|██▎       | 12/51 [07:22<20:19, 31.28s/it]
+Epoch 2/12:  25%|██▌       | 13/51 [07:48<18:52, 29.81s/it]
+Epoch 2/12:  27%|██▋       | 14/51 [08:13<17:27, 28.30s/it]
+Epoch 2/12:  29%|██▉       | 15/51 [08:33<15:26, 25.74s/it]
+Epoch 2/12:  31%|███▏      | 16/51 [09:02<15:43, 26.96s/it]
+Epoch 2/12:  33%|███▎      | 17/51 [09:18<13:19, 23.52s/it]
+Epoch 2/12:  35%|███▌      | 18/51 [09:42<13:04, 23.78s/it]
+Epoch 2/12:  37%|███▋      | 19/51 [10:16<14:14, 26.71s/it]
+Epoch 2/12:  39%|███▉      | 20/51 [10:48<14:38, 28.34s/it]
+Epoch 2/12:  41%|████      | 21/51 [11:16<14:05, 28.18s/it]
+Epoch 2/12:  43%|████▎     | 22/51 [11:45<13:50, 28.63s/it]
+Epoch 2/12:  45%|████▌     | 23/51 [12:11<12:51, 27.55s/it]
+Epoch 2/12:  47%|████▋     | 24/51 [12:40<12:38, 28.09s/it]
+Epoch 2/12:  49%|████▉     | 25/51 [13:13<12:50, 29.62s/it]
+Epoch 2/12:  51%|█████     | 26/51 [13:41<12:06, 29.05s/it]
+Epoch 2/12:  53%|█████▎    | 27/51 [14:06<11:06, 27.78s/it]
+Epoch 2/12:  55%|█████▍    | 28/51 [14:27<09:56, 25.93s/it]
+Epoch 2/12:  57%|█████▋    | 29/51 [14:49<09:03, 24.70s/it]
+Epoch 2/12:  59%|█████▉    | 30/51 [15:12<08:30, 24.33s/it]
+Epoch 2/12:  61%|██████    | 31/51 [15:40<08:26, 25.35s/it]
+Epoch 2/12:  63%|██████▎   | 32/51 [16:10<08:27, 26.73s/it]
+Epoch 2/12:  65%|██████▍   | 33/51 [16:40<08:19, 27.73s/it]
+Epoch 2/12:  67%|██████▋   | 34/51 [17:18<08:40, 30.63s/it]
+Epoch 2/12:  69%|██████▊   | 35/51 [17:47<08:01, 30.11s/it]
+Epoch 2/12:  71%|███████   | 36/51 [18:15<07:23, 29.54s/it]
+Epoch 2/12:  73%|███████▎  | 37/51 [18:49<07:15, 31.07s/it]
+Epoch 2/12:  75%|███████▍  | 38/51 [19:15<06:21, 29.35s/it]
+Epoch 2/12:  76%|███████▋  | 39/51 [19:44<05:52, 29.37s/it]
+Epoch 2/12:  78%|███████▊  | 40/51 [20:14<05:23, 29.42s/it]
+Epoch 2/12:  80%|████████  | 41/51 [20:29<04:11, 25.16s/it]
+Epoch 2/12:  82%|████████▏ | 42/51 [20:50<03:34, 23.86s/it]
+Epoch 2/12:  84%|████████▍ | 43/51 [21:18<03:21, 25.17s/it]
+Epoch 2/12:  86%|████████▋ | 44/51 [22:03<03:36, 30.99s/it]
+Epoch 2/12:  88%|████████▊ | 45/51 [22:36<03:11, 31.88s/it]
+Epoch 2/12:  90%|█████████ | 46/51 [23:04<02:32, 30.53s/it]
+Epoch 2/12:  92%|█████████▏| 47/51 [23:30<01:56, 29.08s/it]
+Epoch 2/12:  94%|█████████▍| 48/51 [24:03<01:31, 30.51s/it]
+Epoch 2/12:  96%|█████████▌| 49/51 [24:32<01:00, 30.00s/it]
+Epoch 2/12:  98%|█████████▊| 50/51 [24:58<00:28, 28.66s/it]
+Epoch 2/12: 100%|██████████| 51/51 [25:08<00:00, 23.20s/it]
+Epoch 2/12: 100%|██████████| 51/51 [25:08<00:00, 29.58s/it]
+step 10: train_loss=30.2733
+Epoch 2: val_loss=6.7921
+
+Epoch 3/12:   0%|          | 0/51 [00:00<?, ?it/s]
+Epoch 3/12:   2%|▏         | 1/51 [01:17<1:04:33, 77.46s/it]
+Epoch 3/12:   4%|▍         | 2/51 [01:48<40:53, 50.06s/it]  
+Epoch 3/12:   6%|▌         | 3/51 [02:15<31:39, 39.58s/it]
+Epoch 3/12:   8%|▊         | 4/51 [02:49<29:21, 37.48s/it]
+Epoch 3/12:  10%|▉         | 5/51 [03:19<26:44, 34.87s/it]
+Epoch 3/12:  12%|█▏        | 6/51 [03:46<23:59, 31.99s/it]
+Epoch 3/12:  14%|█▎        | 7/51 [04:12<21:57, 29.95s/it]
+Epoch 3/12:  16%|█▌        | 8/51 [04:38<20:45, 28.97s/it]
+Epoch 3/12:  18%|█▊        | 9/51 [05:13<21:35, 30.84s/it]
+Epoch 3/12:  20%|█▉        | 10/51 [05:38<19:40, 28.78s/it]
+Epoch 3/12:  22%|██▏       | 11/51 [06:03<18:23, 27.60s/it]
+Epoch 3/12:  24%|██▎       | 12/51 [06:29<17:40, 27.19s/it]
+Epoch 3/12:  25%|██▌       | 13/51 [06:58<17:32, 27.70s/it]
+Epoch 3/12:  27%|██▋       | 14/51 [07:18<15:43, 25.51s/it]
+Epoch 3/12:  29%|██▉       | 15/51 [07:44<15:26, 25.73s/it]
+Epoch 3/12:  31%|███▏      | 16/51 [08:14<15:45, 27.02s/it]
+Epoch 3/12:  33%|███▎      | 17/51 [08:42<15:25, 27.22s/it]
+Epoch 3/12:  35%|███▌      | 18/51 [09:08<14:49, 26.95s/it]
+Epoch 3/12:  37%|███▋      | 19/51 [09:33<14:01, 26.31s/it]
+Epoch 3/12:  39%|███▉      | 20/51 [09:52<12:29, 24.18s/it]
+Epoch 3/12:  41%|████      | 21/51 [10:14<11:40, 23.36s/it]
+Epoch 3/12:  43%|████▎     | 22/51 [10:30<10:13, 21.15s/it]
+Epoch 3/12:  45%|████▌     | 23/51 [10:43<08:45, 18.77s/it]
+Epoch 3/12:  47%|████▋     | 24/51 [11:12<09:51, 21.91s/it]
+Epoch 3/12:  49%|████▉     | 25/51 [11:34<09:31, 22.00s/it]
+Epoch 3/12:  51%|█████     | 26/51 [11:56<09:02, 21.71s/it]
+Epoch 3/12:  53%|█████▎    | 27/51 [12:19<08:53, 22.21s/it]
+Epoch 3/12:  55%|█████▍    | 28/51 [12:39<08:18, 21.67s/it]
+Epoch 3/12:  57%|█████▋    | 29/51 [12:59<07:42, 21.00s/it]
+Epoch 3/12:  59%|█████▉    | 30/51 [13:21<07:25, 21.23s/it]
+Epoch 3/12:  61%|██████    | 31/51 [13:37<06:35, 19.75s/it]
+Epoch 3/12:  63%|██████▎   | 32/51 [13:55<06:08, 19.40s/it]
+Epoch 3/12:  65%|██████▍   | 33/51 [14:30<07:13, 24.07s/it]
+Epoch 3/12:  67%|██████▋   | 34/51 [14:54<06:49, 24.08s/it]
+Epoch 3/12:  69%|██████▊   | 35/51 [15:17<06:15, 23.49s/it]
+Epoch 3/12:  71%|███████   | 36/51 [15:37<05:39, 22.65s/it]
+Epoch 3/12:  73%|███████▎  | 37/51 [15:59<05:14, 22.44s/it]
+Epoch 3/12:  75%|███████▍  | 38/51 [16:22<04:54, 22.65s/it]
+Epoch 3/12:  76%|███████▋  | 39/51 [16:50<04:49, 24.15s/it]
+Epoch 3/12:  78%|███████▊  | 40/51 [17:21<04:47, 26.13s/it]
+Epoch 3/12:  80%|████████  | 41/51 [17:49<04:29, 26.90s/it]
+Epoch 3/12:  82%|████████▏ | 42/51 [18:14<03:57, 26.34s/it]
+Epoch 3/12:  84%|████████▍ | 43/51 [18:34<03:13, 24.19s/it]
+Epoch 3/12:  86%|████████▋ | 44/51 [18:51<02:35, 22.19s/it]
+Epoch 3/12:  88%|████████▊ | 45/51 [19:14<02:13, 22.25s/it]
+Epoch 3/12:  90%|█████████ | 46/51 [19:38<01:54, 22.91s/it]
+Epoch 3/12:  92%|█████████▏| 47/51 [20:02<01:32, 23.20s/it]
+Epoch 3/12:  94%|█████████▍| 48/51 [20:24<01:08, 22.97s/it]
+Epoch 3/12:  96%|█████████▌| 49/51 [20:43<00:43, 21.68s/it]
+Epoch 3/12:  98%|█████████▊| 50/51 [21:05<00:21, 21.91s/it]
+Epoch 3/12: 100%|██████████| 51/51 [21:12<00:00, 17.18s/it]
+Epoch 3/12: 100%|██████████| 51/51 [21:12<00:00, 24.94s/it]
+Epoch 3: val_loss=5.9867
+
+Epoch 4/12:   0%|          | 0/51 [00:00<?, ?it/s]
+Epoch 4/12:   2%|▏         | 1/51 [00:55<46:31, 55.82s/it]
+Epoch 4/12:   4%|▍         | 2/51 [01:32<36:12, 44.33s/it]
+Epoch 4/12:   6%|▌         | 3/51 [01:59<29:26, 36.80s/it]
+Epoch 4/12:   8%|▊         | 4/51 [02:25<25:11, 32.17s/it]
+Epoch 4/12:  10%|▉         | 5/51 [02:51<23:09, 30.20s/it]
+Epoch 4/12:  12%|█▏        | 6/51 [03:17<21:25, 28.57s/it]
+Epoch 4/12:  14%|█▎        | 7/51 [03:53<22:50, 31.14s/it]
+Epoch 4/12:  16%|█▌        | 8/51 [04:26<22:39, 31.62s/it]
+Epoch 4/12:  18%|█▊        | 9/51 [05:02<23:12, 33.17s/it]
+Epoch 4/12:  20%|█▉        | 10/51 [05:46<24:58, 36.54s/it]
+Epoch 4/12:  22%|██▏       | 11/51 [06:11<21:59, 32.99s/it]
+Epoch 4/12:  24%|██▎       | 12/51 [06:37<20:00, 30.79s/it]
+Epoch 4/12:  25%|██▌       | 13/51 [07:09<19:45, 31.20s/it]
+Epoch 4/12:  27%|██▋       | 14/51 [07:41<19:26, 31.53s/it]
+Epoch 4/12:  29%|██▉       | 15/51 [08:02<16:59, 28.31s/it]
+Epoch 4/12:  31%|███▏      | 16/51 [08:28<15:59, 27.42s/it]
+Epoch 4/12:  33%|███▎      | 17/51 [09:06<17:27, 30.82s/it]
+Epoch 4/12:  35%|███▌      | 18/51 [09:34<16:29, 29.98s/it]
+Epoch 4/12:  37%|███▋      | 19/51 [09:54<14:16, 26.77s/it]
+Epoch 4/12:  39%|███▉      | 20/51 [10:19<13:33, 26.24s/it]
+Epoch 4/12:  41%|████      | 21/51 [10:41<12:35, 25.19s/it]
+Epoch 4/12:  43%|████▎     | 22/51 [11:01<11:25, 23.64s/it]
+Epoch 4/12:  45%|████▌     | 23/51 [11:27<11:20, 24.31s/it]
+Epoch 4/12:  47%|████▋     | 24/51 [11:55<11:23, 25.31s/it]
+Epoch 4/12:  49%|████▉     | 25/51 [12:13<09:57, 22.98s/it]
+Epoch 4/12:  51%|█████     | 26/51 [12:30<08:52, 21.29s/it]
+Epoch 4/12:  53%|█████▎    | 27/51 [12:45<07:49, 19.56s/it]
+Epoch 4/12:  55%|█████▍    | 28/51 [13:07<07:42, 20.09s/it]
+Epoch 4/12:  57%|█████▋    | 29/51 [13:31<07:46, 21.21s/it]
+Epoch 4/12:  59%|█████▉    | 30/51 [13:54<07:42, 22.01s/it]
+Epoch 4/12:  61%|██████    | 31/51 [14:18<07:31, 22.57s/it]
+Epoch 4/12:  63%|██████▎   | 32/51 [14:43<07:19, 23.13s/it]
+Epoch 4/12:  65%|██████▍   | 33/51 [15:08<07:06, 23.68s/it]
+Epoch 4/12:  67%|██████▋   | 34/51 [15:45<07:50, 27.66s/it]
+Epoch 4/12:  69%|██████▊   | 35/51 [16:17<07:45, 29.07s/it]
+Epoch 4/12:  71%|███████   | 36/51 [16:57<08:04, 32.28s/it]
+Epoch 4/12:  73%|███████▎  | 37/51 [17:35<07:57, 34.08s/it]
+Epoch 4/12:  75%|███████▍  | 38/51 [17:55<06:26, 29.72s/it]
+Epoch 4/12:  76%|███████▋  | 39/51 [18:13<05:15, 26.29s/it]
+Epoch 4/12:  78%|███████▊  | 40/51 [18:35<04:34, 24.93s/it]
+Epoch 4/12:  80%|████████  | 41/51 [18:46<03:29, 20.99s/it]
+Epoch 4/12:  82%|████████▏ | 42/51 [19:00<02:49, 18.83s/it]
+Epoch 4/12:  84%|████████▍ | 43/51 [19:18<02:26, 18.36s/it]
+Epoch 4/12:  86%|████████▋ | 44/51 [19:43<02:22, 20.39s/it]
+Epoch 4/12:  88%|████████▊ | 45/51 [20:05<02:06, 21.10s/it]
+Epoch 4/12:  90%|█████████ | 46/51 [20:27<01:45, 21.20s/it]
+Epoch 4/12:  92%|█████████▏| 47/51 [20:42<01:17, 19.44s/it]
+Epoch 4/12:  94%|█████████▍| 48/51 [20:57<00:53, 17.96s/it]
+Epoch 4/12:  96%|█████████▌| 49/51 [21:12<00:34, 17.08s/it]
+Epoch 4/12:  98%|█████████▊| 50/51 [21:29<00:17, 17.24s/it]
+Epoch 4/12: 100%|██████████| 51/51 [21:33<00:00, 13.29s/it]
+Epoch 4/12: 100%|██████████| 51/51 [21:33<00:00, 25.37s/it]
+step 20: train_loss=12.1213
+Epoch 4: val_loss=5.1977
+
+Epoch 5/12:   0%|          | 0/51 [00:00<?, ?it/s]
+Epoch 5/12:   2%|▏         | 1/51 [00:44<37:20, 44.80s/it]
+Epoch 5/12:   4%|▍         | 2/51 [01:08<26:16, 32.18s/it]
+Epoch 5/12:   6%|▌         | 3/51 [01:31<22:31, 28.16s/it]
+Epoch 5/12:   8%|▊         | 4/51 [01:50<19:06, 24.39s/it]
+Epoch 5/12:  10%|▉         | 5/51 [02:14<18:43, 24.42s/it]
+Epoch 5/12:  12%|█▏        | 6/51 [02:37<17:51, 23.81s/it]
+Epoch 5/12:  14%|█▎        | 7/51 [03:14<20:45, 28.30s/it]
+Epoch 5/12:  16%|█▌        | 8/51 [03:47<21:16, 29.70s/it]
+Epoch 5/12:  18%|█▊        | 9/51 [04:16<20:40, 29.55s/it]
+Epoch 5/12:  20%|█▉        | 10/51 [04:43<19:36, 28.70s/it]
+Epoch 5/12:  22%|██▏       | 11/51 [05:08<18:19, 27.49s/it]
+Epoch 5/12:  24%|██▎       | 12/51 [05:28<16:29, 25.38s/it]
+Epoch 5/12:  25%|██▌       | 13/51 [06:01<17:25, 27.52s/it]
+Epoch 5/12:  27%|██▋       | 14/51 [07:10<24:50, 40.28s/it]
+Epoch 5/12:  29%|██▉       | 15/51 [07:48<23:41, 39.48s/it]
+Epoch 5/12:  31%|███▏      | 16/51 [08:17<21:11, 36.33s/it]
+Epoch 5/12:  33%|███▎      | 17/51 [08:37<17:48, 31.43s/it]
+Epoch 5/12:  35%|███▌      | 18/51 [09:07<17:05, 31.08s/it]
+Epoch 5/12:  37%|███▋      | 19/51 [09:32<15:34, 29.21s/it]
+Epoch 5/12:  39%|███▉      | 20/51 [09:51<13:32, 26.19s/it]
+Epoch 5/12:  41%|████      | 21/51 [10:11<12:03, 24.12s/it]
+Epoch 5/12:  43%|████▎     | 22/51 [10:43<12:52, 26.65s/it]
+Epoch 5/12:  45%|████▌     | 23/51 [11:22<14:05, 30.20s/it]
+Epoch 5/12:  47%|████▋     | 24/51 [11:48<13:00, 28.90s/it]
+Epoch 5/12:  49%|████▉     | 25/51 [12:04<10:50, 25.01s/it]
+Epoch 5/12:  51%|█████     | 26/51 [12:22<09:33, 22.96s/it]
+Epoch 5/12:  53%|█████▎    | 27/51 [12:40<08:36, 21.50s/it]
+Epoch 5/12:  55%|█████▍    | 28/51 [12:55<07:30, 19.59s/it]
+Epoch 5/12:  57%|█████▋    | 29/51 [13:15<07:15, 19.80s/it]
+Epoch 5/12:  59%|█████▉    | 30/51 [13:33<06:41, 19.10s/it]
+Epoch 5/12:  61%|██████    | 31/51 [13:49<06:04, 18.20s/it]
+Epoch 5/12:  63%|██████▎   | 32/51 [14:08<05:52, 18.56s/it]
+Epoch 5/12:  65%|██████▍   | 33/51 [14:17<04:41, 15.62s/it]
+Epoch 5/12:  67%|██████▋   | 34/51 [14:29<04:07, 14.59s/it]
+Epoch 5/12:  69%|██████▊   | 35/51 [14:41<03:41, 13.83s/it]
+Epoch 5/12:  71%|███████   | 36/51 [14:56<03:31, 14.12s/it]
+Epoch 5/12:  73%|███████▎  | 37/51 [15:13<03:29, 14.93s/it]
+Epoch 5/12:  75%|███████▍  | 38/51 [15:28<03:14, 14.92s/it]
+Epoch 5/12:  76%|███████▋  | 39/51 [15:45<03:07, 15.61s/it]
+Epoch 5/12:  78%|███████▊  | 40/51 [16:02<02:56, 16.04s/it]
+Epoch 5/12:  80%|████████  | 41/51 [16:20<02:46, 16.66s/it]
+Epoch 5/12:  82%|████████▏ | 42/51 [16:39<02:36, 17.43s/it]
+Epoch 5/12:  84%|████████▍ | 43/51 [17:03<02:35, 19.42s/it]
+Epoch 5/12:  86%|████████▋ | 44/51 [17:27<02:25, 20.80s/it]
+Epoch 5/12:  88%|████████▊ | 45/51 [17:49<02:05, 20.93s/it]
+Epoch 5/12:  90%|█████████ | 46/51 [18:10<01:45, 21.06s/it]
+Epoch 5/12:  92%|█████████▏| 47/51 [18:30<01:23, 20.76s/it]
+Epoch 5/12:  94%|█████████▍| 48/51 [18:53<01:03, 21.33s/it]
+Epoch 5/12:  96%|█████████▌| 49/51 [19:22<00:47, 23.74s/it]
+Epoch 5/12:  98%|█████████▊| 50/51 [19:49<00:24, 24.70s/it]
+Epoch 5/12: 100%|██████████| 51/51 [19:55<00:00, 19.23s/it]
+Epoch 5/12: 100%|██████████| 51/51 [19:55<00:00, 23.45s/it]
+step 30: train_loss=30.8140
+Epoch 5: val_loss=4.5528
+
+Epoch 6/12:   0%|          | 0/51 [00:00<?, ?it/s]
+Epoch 6/12:   2%|▏         | 1/51 [01:00<50:42, 60.84s/it]
+Epoch 6/12:   4%|▍         | 2/51 [01:35<36:58, 45.29s/it]
+Epoch 6/12:   6%|▌         | 3/51 [01:59<28:24, 35.50s/it]
+Epoch 6/12:   8%|▊         | 4/51 [02:22<23:59, 30.63s/it]
+Epoch 6/12:  10%|▉         | 5/51 [02:52<23:23, 30.51s/it]
+Epoch 6/12:  12%|█▏        | 6/51 [03:42<27:55, 37.24s/it]
+Epoch 6/12:  14%|█▎        | 7/51 [04:18<26:52, 36.64s/it]
+Epoch 6/12:  16%|█▌        | 8/51 [04:55<26:26, 36.90s/it]
+Epoch 6/12:  18%|█▊        | 9/51 [05:36<26:40, 38.10s/it]
+Epoch 6/12:  20%|█▉        | 10/51 [06:11<25:27, 37.25s/it]
+Epoch 6/12:  22%|██▏       | 11/51 [06:41<23:17, 34.93s/it]
+Epoch 6/12:  24%|██▎       | 12/51 [07:06<20:49, 32.05s/it]
+Epoch 6/12:  25%|██▌       | 13/51 [07:45<21:37, 34.15s/it]
+Epoch 6/12:  27%|██▋       | 14/51 [08:08<18:55, 30.70s/it]
+Epoch 6/12:  29%|██▉       | 15/51 [08:26<16:05, 26.81s/it]
+Epoch 6/12:  31%|███▏      | 16/51 [08:46<14:31, 24.89s/it]
+Epoch 6/12:  33%|███▎      | 17/51 [09:00<12:08, 21.44s/it]
+Epoch 6/12:  35%|███▌      | 18/51 [09:16<10:50, 19.73s/it]
+Epoch 6/12:  37%|███▋      | 19/51 [09:41<11:24, 21.40s/it]
+Epoch 6/12:  39%|███▉      | 20/51 [10:03<11:13, 21.72s/it]
+Epoch 6/12:  41%|████      | 21/51 [10:24<10:44, 21.49s/it]
+Epoch 6/12:  43%|████▎     | 22/51 [10:42<09:48, 20.30s/it]
+Epoch 6/12:  45%|████▌     | 23/51 [10:59<09:05, 19.48s/it]
+Epoch 6/12:  47%|████▋     | 24/51 [11:17<08:33, 19.02s/it]
+Epoch 6/12:  49%|████▉     | 25/51 [11:33<07:45, 17.91s/it]
+Epoch 6/12:  51%|█████     | 26/51 [11:51<07:33, 18.13s/it]
+Epoch 6/12:  53%|█████▎    | 27/51 [12:17<08:07, 20.33s/it]
+Epoch 6/12:  55%|█████▍    | 28/51 [12:42<08:21, 21.80s/it]
+Epoch 6/12:  57%|█████▋    | 29/51 [13:07<08:20, 22.75s/it]
+Epoch 6/12:  59%|█████▉    | 30/51 [13:28<07:47, 22.27s/it]
+Epoch 6/12:  61%|██████    | 31/51 [13:50<07:26, 22.30s/it]
+Epoch 6/12:  63%|██████▎   | 32/51 [14:12<06:59, 22.08s/it]
+Epoch 6/12:  65%|██████▍   | 33/51 [14:29<06:09, 20.51s/it]
+Epoch 6/12:  67%|██████▋   | 34/51 [14:55<06:15, 22.11s/it]
+Epoch 6/12:  69%|██████▊   | 35/51 [15:29<06:52, 25.80s/it]
+Epoch 6/12:  71%|███████   | 36/51 [15:58<06:42, 26.84s/it]
+Epoch 6/12:  73%|███████▎  | 37/51 [16:38<07:09, 30.69s/it]
+Epoch 6/12:  75%|███████▍  | 38/51 [17:04<06:19, 29.22s/it]
+Epoch 6/12:  76%|███████▋  | 39/51 [17:31<05:42, 28.58s/it]
+Epoch 6/12:  78%|███████▊  | 40/51 [18:00<05:15, 28.73s/it]
+Epoch 6/12:  80%|████████  | 41/51 [18:24<04:32, 27.27s/it]
+Epoch 6/12:  82%|████████▏ | 42/51 [18:52<04:07, 27.53s/it]
+Epoch 6/12:  84%|████████▍ | 43/51 [19:17<03:34, 26.82s/it]
+Epoch 6/12:  86%|████████▋ | 44/51 [19:41<03:01, 25.99s/it]
+Epoch 6/12:  88%|████████▊ | 45/51 [20:05<02:32, 25.34s/it]
+Epoch 6/12:  90%|█████████ | 46/51 [20:29<02:05, 25.08s/it]
+Epoch 6/12:  92%|█████████▏| 47/51 [20:57<01:43, 25.79s/it]
+Epoch 6/12:  94%|█████████▍| 48/51 [21:29<01:22, 27.58s/it]
+Epoch 6/12:  96%|█████████▌| 49/51 [22:09<01:02, 31.44s/it]
+Epoch 6/12:  98%|█████████▊| 50/51 [22:44<00:32, 32.53s/it]
+Epoch 6/12: 100%|██████████| 51/51 [22:56<00:00, 26.44s/it]
+Epoch 6/12: 100%|██████████| 51/51 [22:56<00:00, 27.00s/it]
+Epoch 6: val_loss=3.8809
+
+Epoch 7/12:   0%|          | 0/51 [00:00<?, ?it/s]
+Epoch 7/12:   2%|▏         | 1/51 [01:06<55:34, 66.69s/it]
+Epoch 7/12:   4%|▍         | 2/51 [01:41<39:18, 48.14s/it]
+Epoch 7/12:   6%|▌         | 3/51 [02:30<38:43, 48.40s/it]
+Epoch 7/12:   8%|▊         | 4/51 [03:02<32:48, 41.89s/it]
+Epoch 7/12:  10%|▉         | 5/51 [03:36<29:52, 38.96s/it]
+Epoch 7/12:  12%|█▏        | 6/51 [04:12<28:28, 37.96s/it]
+Epoch 7/12:  14%|█▎        | 7/51 [04:46<26:57, 36.76s/it]
+Epoch 7/12:  16%|█▌        | 8/51 [05:21<25:52, 36.11s/it]
+Epoch 7/12:  18%|█▊        | 9/51 [05:50<23:49, 34.04s/it]
+Epoch 7/12:  20%|█▉        | 10/51 [06:21<22:36, 33.09s/it]
+Epoch 7/12:  22%|██▏       | 11/51 [06:50<21:15, 31.88s/it]
+Epoch 7/12:  24%|██▎       | 12/51 [07:17<19:46, 30.42s/it]
+Epoch 7/12:  25%|██▌       | 13/51 [07:48<19:17, 30.47s/it]
+Epoch 7/12:  27%|██▋       | 14/51 [08:28<20:30, 33.26s/it]
+Epoch 7/12:  29%|██▉       | 15/51 [09:17<22:52, 38.14s/it]
+Epoch 7/12:  31%|███▏      | 16/51 [09:58<22:46, 39.06s/it]
+Epoch 7/12:  33%|███▎      | 17/51 [10:43<23:04, 40.73s/it]
+Epoch 7/12:  35%|███▌      | 18/51 [11:16<21:05, 38.35s/it]
+Epoch 7/12:  37%|███▋      | 19/51 [11:48<19:28, 36.52s/it]
+Epoch 7/12:  39%|███▉      | 20/51 [12:23<18:39, 36.11s/it]
+Epoch 7/12:  41%|████      | 21/51 [13:01<18:21, 36.73s/it]
+Epoch 7/12:  43%|████▎     | 22/51 [13:38<17:48, 36.84s/it]
+Epoch 7/12:  45%|████▌     | 23/51 [14:14<16:57, 36.32s/it]
+Epoch 7/12:  47%|████▋     | 24/51 [14:49<16:10, 35.95s/it]
+Epoch 7/12:  49%|████▉     | 25/51 [15:17<14:37, 33.74s/it]
+Epoch 7/12:  51%|█████     | 26/51 [15:59<15:04, 36.20s/it]
+Epoch 7/12:  53%|█████▎    | 27/51 [16:27<13:25, 33.57s/it]
+Epoch 7/12:  55%|█████▍    | 28/51 [16:58<12:39, 33.00s/it]
+Epoch 7/12:  57%|█████▋    | 29/51 [17:22<11:07, 30.32s/it]
+Epoch 7/12:  59%|█████▉    | 30/51 [17:48<10:09, 29.01s/it]
+Epoch 7/12:  61%|██████    | 31/51 [18:18<09:43, 29.15s/it]
+Epoch 7/12:  63%|██████▎   | 32/51 [18:45<09:01, 28.48s/it]
+Epoch 7/12:  65%|██████▍   | 33/51 [19:27<09:45, 32.54s/it]
+Epoch 7/12:  67%|██████▋   | 34/51 [20:06<09:45, 34.45s/it]
+Epoch 7/12:  69%|██████▊   | 35/51 [20:32<08:33, 32.09s/it]
+Epoch 7/12:  71%|███████   | 36/51 [20:58<07:32, 30.17s/it]
+Epoch 7/12:  73%|███████▎  | 37/51 [21:21<06:31, 28.00s/it]
+Epoch 7/12:  75%|███████▍  | 38/51 [21:45<05:48, 26.78s/it]
+Epoch 7/12:  76%|███████▋  | 39/51 [22:20<05:51, 29.26s/it]
+Epoch 7/12:  78%|███████▊  | 40/51 [22:52<05:31, 30.15s/it]
+Epoch 7/12:  80%|████████  | 41/51 [23:17<04:46, 28.62s/it]
+Epoch 7/12:  82%|████████▏ | 42/51 [23:40<04:01, 26.84s/it]
