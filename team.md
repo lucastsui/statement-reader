@@ -1,2 +1,2 @@
 # Introduction
-- Hi this is Ming Leong Tsui (Lucas).
+- Hi this is Ming Leong Tsui (Lucas)
